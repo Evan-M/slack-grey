@@ -757,6 +757,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #col_messages { box-shadow: inset 1px 0 0 0 #222; }
 
+.c-message:hover { background-color: #222 !important; }
+
 .c-message:hover .c-message__broadcast_preamble_outer, .c-message:hover .c-message__broadcast_preamble { color: #949494; }
 
 .c-message--hover .c-message__broadcast_preamble_outer .c-message--focus .c-message__broadcast_preamble_outer, .c-message--hover .c-message__broadcast_preamble_outer .c-message--focus .c-message__broadcast_preamble, .c-message--hover .c-message__broadcast_preamble .c-message--focus .c-message__broadcast_preamble_outer, .c-message--hover .c-message__broadcast_preamble .c-message--focus .c-message__broadcast_preamble { color: #949494; }
@@ -808,6 +810,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 .c-message__body--tombstone { color: #949494; }
 
 .c-message__body .c-mrkdwn__mention, .c-message__body .c-mrkdwn__broadcast--mention { color: #949494; }
+
+.c-message__content:hover { background-color: #222 !important; }
 
 .c-message__label { color: #949494; }
 
@@ -872,6 +876,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 .c-message_list .c-scrollbar__bar { background: #424242; }
 
 .c-virtual_list__item--focus:focus .c-message_list__focus_indicator { box-shadow: inset 0 0 0 3px rgba(130, 130, 130, 0.8); }
+
+div.c-virtual_list__scroll_container { background-color: #222 !important; }
 
 ts-message { color: #e6e6e6; }
 
@@ -1251,6 +1257,8 @@ ts-message .reply_bar .reply_bar_caret, ts-message .reply_bar .view_conv_hover, 
 ts-message .reply_bar:hover { background: #222; border-color: #000; }
 
 .inline_color_block { border-color: #545454; }
+
+.p-message_pane .c-message_list:not(.c-virtual_list--scrollbar), .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider { z-index: 0; }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { background: #222; border-bottom: 1px solid #222; }
 
